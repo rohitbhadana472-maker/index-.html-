@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Computer Evolution | Avni Jain</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#07111f;color:#edf6ff;line-height:1.6}
+nav{position:sticky;top:0;z-index:20;background:#0b1b2e;border-bottom:1px solid #27415d;display:flex;justify-content:center;gap:8px;flex-wrap:wrap;padding:12px}
+nav a{border:0;background:transparent;color:#cfe5fa;padding:10px 15px;border-radius:10px;cursor:pointer;font-weight:700;text-decoration:none;display:inline-block}
+nav a:hover,nav a.active{background:#173b5d;color:#fff}
+.page{display:none;min-height:calc(100vh - 64px);padding:55px 7%}
+.page.active{display:block}
+.hero{max-width:950px;margin:auto;text-align:center;padding:55px 0}
+.badge{display:inline-block;border:1px solid #4d789f;border-radius:999px;padding:7px 14px;color:#a9d9ff;margin-bottom:20px}
+h1{font-size:clamp(40px,7vw,76px);line-height:1.05;margin-bottom:20px}
+h2{font-size:38px;margin-bottom:12px}
+h3{font-size:21px;margin-bottom:8px}
+.lead{font-size:20px;color:#c5d8e9;max-width:760px;margin:0 auto 25px}
+.student{margin:25px auto;padding:18px;border:1px solid #294964;border-radius:16px;max-width:430px;background:#0d2136}
+.btn{border:0;border-radius:12px;padding:13px 20px;background:#2d79b7;color:white;font-weight:700;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:28px}
+.card{background:#0d2034;border:1px solid #294964;border-radius:18px;padding:22px}
+.card p{color:#c5d8e9}
+.timeline{position:relative;max-width:900px;margin:35px auto}
+.timeline:before{content:"";position:absolute;left:18px;top:0;bottom:0;width:2px;background:#376687}
+.event{position:relative;margin:0 0 22px 55px;padding:20px;background:#0d2034;border:1px solid #294964;border-radius:16px}
+.dot{position:absolute;left:-47px;top:25px;width:16px;height:16px;border-radius:50%;background:#7fc4f2;border:3px solid #07111f}
+.gen{min-height:190px}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
+.compare .card:first-child{border-color:#66583c}
+.compare .card:last-child{border-color:#3d6682}
+.quiz{max-width:850px;margin:30px auto}
+.q{background:#0d2034;border:1px solid #294964;border-radius:16px;padding:20px;margin:16px 0}
+.q label{display:block;padding:8px;border-radius:8px;cursor:pointer}
+.q label:hover{background:#173b5d}
+.result{font-size:22px;font-weight:700;margin-top:20px}
+footer{text-align:center;padding:25px;color:#9bb4c9;border-top:1px solid #223c53}
+.small{font-size:14px;color:#9bb4c9}
+@media(max-width:650px){.page{padding:35px 5%}.compare{grid-template-columns:1fr}nav a{padding:8px 10px}h2{font-size:30px}}
+</style>
+</head>
+<body>
+
+<nav>
+<a href="#home" class="active" data-page="home">Home</a>
+<a href="#evolution" data-page="evolution">Evolution</a>
+<a href="#generations" data-page="generations">Generations</a>
+<a href="#future" data-page="future">Future &amp; Quiz</a>
+</nav>
+
+<section id="home" class="page active">
+<div class="hero">
+<span class="badge">COMPUTATIONAL THINKING & AI • CLASS VII</span>
+<h1>Computer Evolution</h1>
+<p class="lead">The Journey from Abacus to Modern Computers</p>
+<div class="student">
+<strong>Avni Jain</strong><br>
+Class VII-B<br>
+Aravali International School
+</div>
+<p class="lead">From simple calculating devices to powerful modern machines, the evolution of computers is a story of human creativity and innovation.</p>
+<button class="btn" onclick="go('evolution')">Start Exploring →</button>
+</div>
+<div class="grid">
+<div class="card"><h3>⚡ Faster Work</h3><p>Computers evolved to perform calculations and tasks faster.</p></div>
+<div class="card"><h3>💾 Information</h3><p>Modern computers can store and process huge amounts of information.</p></div>
+<div class="card"><h3>💡 Innovation</h3><p>New technologies have made computers smaller, faster and more useful.</p></div>
+</div>
+</section>
+
+<section id="evolution" class="page">
+<h2>From Abacus to Modern Computers</h2>
+<p class="lead" style="margin-left:0">A chronological journey through important stages in computing.</p>
+<div class="timeline">
+<div class="event"><span class="dot"></span><h3>1. Abacus</h3><p>An early calculating device used for performing arithmetic calculations.</p></div>
+<div class="event"><span class="dot"></span><h3>2. Pascaline</h3><p>A mechanical calculator associated with Blaise Pascal.</p></div>
+<div class="event"><span class="dot"></span><h3>3. Difference Engine</h3><p>A mechanical calculating machine designed by Charles Babbage.</p></div>
+<div class="event"><span class="dot"></span><h3>4. Analytical Engine</h3><p>Charles Babbage designed this as a general-purpose mechanical computer concept.</p></div>
+<div class="event"><span class="dot"></span><h3>5. ENIAC</h3><p>An early electronic general-purpose computer.</p></div>
+<div class="event"><span class="dot"></span><h3>6. UNIVAC</h3><p>One of the early commercial computers.</p></div>
+<div class="event"><span class="dot"></span><h3>7. Personal Computers</h3><p>Computers became smaller and more accessible for individual users.</p></div>
+<div class="event"><span class="dot"></span><h3>8. Modern Devices</h3><p>Computing is now found in laptops, smartphones, tablets and smart devices.</p></div>
+</div>
+</section>
+
+<section id="generations" class="page">
+<h2>Five Generations of Computers</h2>
+<p class="lead" style="margin-left:0">How computer technology developed across five generations.</p>
+<div class="grid">
+<div class="card gen"><h3>First Generation</h3><p><b>Technology:</b> Vacuum tubes</p><p><b>Example:</b> ENIAC</p><p><b>Advantage:</b> Electronic calculation</p><p><b>Limitation:</b> Very large and produced much heat</p></div>
+<div class="card gen"><h3>Second Generation</h3><p><b>Technology:</b> Transistors</p><p><b>Example:</b> Transistor-based computers</p><p><b>Advantage:</b> Smaller and more reliable</p><p><b>Limitation:</b> Still expensive</p></div>
+<div class="card gen"><h3>Third Generation</h3><p><b>Technology:</b> Integrated Circuits</p><p><b>Example:</b> IC-based computers</p><p><b>Advantage:</b> More compact and efficient</p><p><b>Limitation:</b> Required advanced manufacturing</p></div>
+<div class="card gen"><h3>Fourth Generation</h3><p><b>Technology:</b> Microprocessors</p><p><b>Example:</b> Personal computers</p><p><b>Advantage:</b> Smaller, faster and widely accessible</p><p><b>Limitation:</b> Technology changes quickly</p></div>
+<div class="card gen"><h3>Fifth Generation</h3><p><b>Technology:</b> AI and advanced technologies</p><p><b>Example:</b> Modern intelligent systems</p><p><b>Advantage:</b> Intelligent and advanced computing</p><p><b>Limitation:</b> Responsible use and complex development are important</p></div>
+</div>
+<div class="compare">
+<div class="card"><h3>THEN</h3><p>• Very large machines<br>• Expensive<br>• Limited processing ability<br>• Needed considerable space<br>• Mainly used by organizations</p></div>
+<div class="card"><h3>NOW</h3><p>• Small and portable devices<br>• Much faster processing<br>• Large storage capacity<br>• Widely accessible<br>• AI-powered features</p></div>
+</div>
+</section>
+
+<section id="future" class="page">
+<h2>Where Are Computers Going?</h2>
+<div class="grid">
+<div class="card"><h3>🤖 Artificial Intelligence</h3><p>AI enables computers and machines to perform tasks that normally require human intelligence, such as learning, reasoning, problem-solving and language understanding.</p></div>
+<div class="card"><h3>🦾 Robotics</h3><p>Robots can combine computing, sensors and software to perform tasks automatically or assist humans.</p></div>
+<div class="card"><h3>⚛️ Quantum Computing</h3><p>An emerging area that uses principles of quantum mechanics to process information differently from traditional computers.</p></div>
+<div class="card"><h3>🔮 The Future</h3><p>Future computers may become more intelligent, connected and useful in education, healthcare, transportation and scientific research.</p></div>
+</div>
+
+<div class="quiz">
+<h2 style="margin-top:45px">🧠 8-Question Quiz</h2>
+<form id="quizForm">
+<div class="q"><b>1. Which is one of the earliest calculating tools?</b>
+<label><input type="radio" name="q1" value="A"> A) Laptop</label><label><input type="radio" name="q1" value="B"> B) Abacus</label><label><input type="radio" name="q1" value="C"> C) Smartphone</label><label><input type="radio" name="q1" value="D"> D) Tablet</label></div>
+<div class="q"><b>2. Who designed the Difference Engine?</b>
+<label><input type="radio" name="q2" value="A"> A) Charles Babbage</label><label><input type="radio" name="q2" value="B"> B) Alan Turing</label><label><input type="radio" name="q2" value="C"> C) Tim Berners-Lee</label><label><input type="radio" name="q2" value="D"> D) Steve Jobs</label></div>
+<div class="q"><b>3. ENIAC was an example of which generation?</b>
+<label><input type="radio" name="q3" value="A"> A) First</label><label><input type="radio" name="q3" value="B"> B) Second</label><label><input type="radio" name="q3" value="C"> C) Third</label><label><input type="radio" name="q3" value="D"> D) Fourth</label></div>
+<div class="q"><b>4. Which technology was used in second-generation computers?</b>
+<label><input type="radio" name="q4" value="A"> A) Vacuum tubes</label><label><input type="radio" name="q4" value="B"> B) Transistors</label><label><input type="radio" name="q4" value="C"> C) Microprocessors</label><label><input type="radio" name="q4" value="D"> D) AI</label></div>
+<div class="q"><b>5. Which technology is associated with the fourth generation?</b>
+<label><input type="radio" name="q5" value="A"> A) Microprocessors</label><label><input type="radio" name="q5" value="B"> B) Vacuum tubes</label><label><input type="radio" name="q5" value="C"> C) Abacus</label><label><input type="radio" name="q5" value="D"> D) Mechanical gears</label></div>
+<div class="q"><b>6. What does AI stand for?</b>
+<label><input type="radio" name="q6" value="A"> A) Automatic Internet</label><label><input type="radio" name="q6" value="B"> B) Artificial Intelligence</label><label><input type="radio" name="q6" value="C"> C) Advanced Information</label><label><input type="radio" name="q6" value="D"> D) Artificial Internet</label></div>
+<div class="q"><b>7. Which is an example of a modern computing device?</b>
+<label><input type="radio" name="q7" value="A"> A) Smartphone</label><label><input type="radio" name="q7" value="B"> B) Abacus</label><label><input type="radio" name="q7" value="C"> C) Pascaline</label><label><input type="radio" name="q7" value="D"> D) Difference Engine</label></div>
+<div class="q"><b>8. Which is an emerging future direction of computing?</b>
+<label><input type="radio" name="q8" value="A"> A) Quantum computing</label><label><input type="radio" name="q8" value="B"> B) Abacus</label><label><input type="radio" name="q8" value="C"> C) Pascaline</label><label><input type="radio" name="q8" value="D"> D) Vacuum tubes</label></div>
+<button type="button" class="btn" onclick="checkQuiz()">Check My Score</button>
+<div id="result" class="result"></div>
+</form>
+</div>
+
+<div class="card" style="margin-top:35px">
+<h3>Conclusion</h3>
+<p>The evolution of computers shows how human creativity and technology have transformed the way we learn, work and communicate. From the simple Abacus to modern AI-powered devices, computers continue to evolve.</p>
+<br>
+<h3>AI Reflection</h3>
+<p><b>AI Tools Used:</b> ChatGPT and website-generation/design AI tools.</p>
+<p>AI helped with brainstorming, organizing information and planning the website. Information should be checked, and AI should be used responsibly and originally.</p>
+</div>
+</section>
+
+<footer>Computer Evolution Project • Avni Jain • Class VII-B • Aravali International School</footer>
+
+<script>
+const pages=['home','evolution','generations','future'];
+
+function showPage(id){
+  if(!pages.includes(id)) id='home';
+  document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));
+  document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('active',a.dataset.page===id));
+  window.scrollTo(0,0);
+}
+
+function route(){
+  const id=(location.hash||'#home').slice(1);
+  showPage(id);
+}
+
+document.querySelectorAll('nav a').forEach(a=>{
+  a.addEventListener('click',()=>showPage(a.dataset.page));
+});
+
+window.addEventListener('hashchange',route);
+route();
+
+function go(id){
+  location.hash=id;
+}
+
+function checkQuiz(){
+ const answers={q1:'B',q2:'A',q3:'A',q4:'B',q5:'A',q6:'B',q7:'A',q8:'A'};
+ let score=0;
+ Object.keys(answers).forEach(q=>{
+  const selected=document.querySelector('input[name="'+q+'"]:checked');
+  if(selected && selected.value===answers[q]) score++;
+ });
+ document.getElementById('result').textContent='Your score: '+score+' / 8 '+(score===8?'🎉 Excellent!':'— Keep exploring and try again!');
+}
+</script>
+</body>
+</html>
